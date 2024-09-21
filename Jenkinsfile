@@ -5,7 +5,7 @@ stages
 {
 
 stage('scm checkout')
-{steps { "git branch: 'main', url: 'https://github.com/prakashk0301/jenkins-test.git'"  }}
+{steps { sh "git branch: 'main', url: 'https://github.com/prakashk0301/jenkins-test.git'"  }}
 
 
 stage('print your message')
